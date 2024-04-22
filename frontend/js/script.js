@@ -114,7 +114,7 @@ const handleLogin = (event) => {
     chat.style.display = "flex"
 
     // Inicia uma conexão WebSocket com o servidor
-    websocket = new WebSocket("ws://localhost:8080")
+    websocket = new WebSocket("ws://chatdesemprego.onrender.com")
 
     // Define a função a ser executada quando uma mensagem é recebida
     websocket.onmessage = processMessage
